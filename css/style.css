@@ -1,0 +1,214 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.full-post,
+.hero-post,
+.blog-posts{
+    padding-left: 1.25em;
+    padding-right: 1.25em; 
+    margin: 0;
+}
+
+.hero-post:hover{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25em;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.logo-text{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 0 0 0 0.5rem;  
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+    font-weight: 600; 
+      
+}
+
+li:not(:last-child){
+    margin-right: 30px; 
+}
+
+li:hover{
+   color: gray;
+   cursor: pointer; 
+}
+
+.hero-post{
+    padding-top: 5em;
+    padding-bottom: 2em;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/sheep.jpg");
+    background-size: cover;
+    color: #fff;
+}
+
+
+.blog-posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(374px, 1fr)); 
+    grid-gap: 1em;
+}
+
+.post{
+    margin-bottom: 2.5em; 
+}
+
+.post-intro{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+.avatar-img {
+  margin-right: 1.875em;
+  border-radius: 50%;
+  width: 182px;
+  height: 182px;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.post-img,
+.full-post-img{
+    width: 374px;
+    height: 232px;
+    min-width: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+    padding: 2.1875em 0 2.1875em 0
+}
+
+
+footer{
+    padding: 2.5em;
+    background: #202020;
+    color: #fff;
+
+}
+
+/* FONTS */
+
+h1,
+h2,
+.date,
+p
+{
+   margin-top: 0.625em; 
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+.date{
+    font-size: 0.75rem;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.view-more{
+    text-decoration: underline;
+    margin-bottom: 2.5em;
+
+}
+
+.recent-posts,
+.view-more{
+    
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+footer p{
+    font-size: 0.75rem;
+    margin: 0;
+    text-align: center;
+    
+}
+
+.bold-p{
+    font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 600px) {
+  .hero-post p,
+  .full-post p,
+  .full-post h1{
+      max-width: 600px;
+  }
+  
+  h1{
+    font-size: 2.5rem;
+}
+
+.date{
+    font-size: 1rem;
+} 
+.post-intro,
+.big-margin {
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+nav, 
+.hero-post,
+.blog-posts,
+.full-post
+{
+    padding-left: 3.125em;
+    padding-right: 3.125em;
+
+}
+
+.full-post-img{
+    max-width:100%;
+    width: 979px;
+    height: 488px;
+}
+
+}
+
+@media (min-width: 730px){
+  .post-intro{
+    flex-direction: row;
+    max-width: 800px;
+    align-items: center;
+}  
+}
